@@ -1,15 +1,19 @@
 export const Searchbar = ({ handleGetRequest }) => {
   return (
-    <form autoComplete="off" onSubmit={handleGetRequest}>
-      <input
-        type="text"
-        className=""
-        name="searchValue"
-        placeholder="Search for images..."
-      />
-      <button type="submit" className="">
-        Search
-      </button>
-    </form>
+    <header className="Searchbar">
+      <form className="SearchForm">
+        <button type="submit" className="SearchForm-button">
+          <span className="SearchForm-button-label">Search</span>
+        </button>
+
+        <input
+          className="SearchForm-input"
+          type="text"
+          autocomplete="off"
+          autofocus
+          placeholder="Search images and photos"
+        />
+      </form>
+    </header>
   );
 };

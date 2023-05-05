@@ -1,3 +1,3 @@
 export const ImageGallery = ({ children }) => {
-  return <ul>{children}</ul>;
+  return <ul className="ImageGallery">{children}</ul>;
 };
