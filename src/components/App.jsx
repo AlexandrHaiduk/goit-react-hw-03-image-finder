@@ -39,10 +39,7 @@ export class App extends Component {
       <>
         <Searchbar handleGetRequest={this.handleGetRequest} />
         <ImageGallery>
-          {this.state.images.map(image => {
-            return <img key={image.id} src={image.webformatURL} />;
-          })}
-          {/* <ImageGalleryItem images={this.state.images} /> */}
+          <ImageGalleryItem images={this.state.images} />
         </ImageGallery>
 
         <Loader />

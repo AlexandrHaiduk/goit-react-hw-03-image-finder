@@ -1,4 +1,4 @@
-export const ImageGalleryItem = images => {
+export const ImageGalleryItem = ({ images }) => {
   return images.map(image => {
     return (
       <li key={image.id}>
